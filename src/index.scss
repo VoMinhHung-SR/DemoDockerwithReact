@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "./styles/reset.scss";
+@import "./styles/base.scss";
+
+@layer utilities {
+
+    .btn-tags {
+        border: #ddd 2px solid;
+        color: darkslategray;
+    }
+    .btn-tags:focus {
+        color: #4154e1;
+    }
+    .btn-tags:focus > span {
+      background-color: #4154e1;
+      color: #f5f5f5 !important;
+    }
+    
+    
+    .ou-radio-custom:hover {
+      background-color: #f5f5f5;
+    }
+    
+    .ou-radio-custom:active {
+      background-color: #ddd;
+    }
+    .ou-selected-time {
+      background-color: #1976d2;
+      color: #fff;
+    }
+    .ou-table-cell {
+      display: flex;
+      align-items: flex-start; /* Aligns content to the top */
+      padding: 16px; /* Adjust the padding as needed */
+    }
+  }
